@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "cookie-web-provider"
+version = "1.0.0"
+description = "Free AI via browser cookie simulation — DeepSeek, Claude, ChatGPT, Kimi, Gemini"
+authors = [{name = "MiMoCode"}]
+license = {text = "MIT"}
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.9,<4",
+]
+
+[project.scripts]
+cookie-web = "cli:main"

@@ -1,0 +1,5 @@
+name: cookie-web
+kind: model-provider
+version: 1.0.0
+description: Free AI via browser cookie simulation (DeepSeek, Claude, ChatGPT, Kimi)
+author: MiMoCode

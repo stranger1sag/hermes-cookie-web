@@ -1,0 +1,22 @@
+# Cookie Web Provider Configuration
+# Add this to ~/.hermes/config.yaml
+
+model:
+  provider: cookie-web
+  # base_url is optional - will auto-detect from Chrome debug URL
+
+cookie_web:
+  # Chrome debug URL (default: http://127.0.0.1:9222)
+  chrome_debug_url: http://127.0.0.1:9222
+  
+  # Enable/disable providers
+  providers:
+    deepseek:
+      enabled: true
+    claude:
+      enabled: true
+    chatgpt:
+      enabled: false  # Requires Sentinel bypass - may not work
+  
+  # Credential storage path (optional)
+  # storage_path: ~/.hermes/cookie-web/credentials.json
